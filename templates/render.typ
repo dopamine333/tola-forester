@@ -151,12 +151,28 @@
 
 // ---- Documents ----
 
+/// Whether math content holds something taller than a line (a fraction, a
+/// matrix, …), around which delimiters should grow.
+#let tall(c) = {
+  if type(c) == array { return c.any(tall) }
+  if type(c) != content { return false }
+  if c.func() in (math.frac, math.binom, math.vec, math.mat, math.cases) { return true }
+  c.fields().values().any(tall)
+}
+
+/// Chrome lays out stretchy MathML fences with gaps in math fonts
+/// ("Sub ( A )"), so paired delimiters around flat content are left unpaired,
+/// which Typst writes as non-stretchy `<mo>`s; around tall content they still
+/// stretch.
+#let flat-fences(it) = if tall(it.body) { it } else { it.body }
+
 /// Render one `(source:, entry:)` record from `select-trees` to its page.
 #let render-tree(tree) = {
   let t = tree.entry
   let title = to-string(title-of(t))
   let authors = t.author.map(a => { let p = tree-entry(a); if p == none { a } else { to-string(title-of(p)) } })
   document(t.output, format: "html", title: title, author: authors)[
+    #show math.lr: flat-fences
     #html.html(lang: site.language.tag)[
       #html.head(head-entries(title).join())
       #html.body[
