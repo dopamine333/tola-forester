@@ -3,25 +3,25 @@
 #import "/lib/macros.typ": *
 
 #tola-meta((
-  title: "subobject",
+  title: "Subobjects",
   date: "2026-11-03",
   author: "Justin",
 ))
 
-For the generalization of a subset, we should look about a monomorphism $i : U arrow.r.hook A$. in the notation of generalized element, the condition of $i : U arrow.r.hook A$ being a monomorphism is: for all generalized element x, y of U with the same context, if ix = iy then x = y (notice ix, iy is a generalized element of A) . so the postcomposition by i can be seen as a inclusion from the generalized element of U to it of A.
+To generalize subsets, we should look at #tree-link("jc-000X")[monomorphisms] $i : U arrow.r.hook A$. In the notation of generalized elements, the condition for $i : U arrow.r.hook A$ to be a #tree-link("jc-000X")[monomorphism] is: for all generalized elements $x, y$ of $U$ with the same context, if $i x = i y$ then $x = y$ (notice that $i x$ and $i y$ are generalized elements of $A$). So postcomposition with $i$ can be seen as an inclusion of the generalized elements of $U$ into those of $A$.
 
-we can recover the notation of a element lying a subset, the inclusion relation between two subset and when two subset are consider equal.
+We can recover the notions of an element lying in a subset, of the inclusion relation between two subsets, and of when two subsets are considered equal.
 
 #transclude("jc-0008")
 
-notice such φ is unique since if we have φ, ψ : Γ → U with x = u φ and x = u ψ then u φ = u ψ implies φ = ψ by the monoticity of u. so the notation x ∈ u do not mention about φ is appropriate.
+Notice that such a $phi$ is unique: if we have $phi, psi : Gamma -> U$ with $x = u phi$ and $x = u psi$, then $u phi = u psi$ implies $phi = psi$ by the #tree-link("jc-000X")[monicity] of $u$. So it is appropriate that the notation $x in u$ does not mention $phi$.
 
 #transclude("jc-0009")
 
-the following exercise make should the definition of $u <= v$ has behaviour we expected and match the definition of in nlab.
+The following exercise shows that the definition of $u <= v$ behaves as we expect and matches the definition on the nLab.
 
 #transclude("jc-000A")
 
-we should closed this section by given the definition of the *_subobjects_* of an object A.
+We close this section by giving the definition of the *_subobjects_* of an object $A$.
 
 #transclude("jc-000B")

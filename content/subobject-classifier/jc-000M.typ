@@ -9,8 +9,8 @@
   author: "Justin",
 ))
 
-Let $cal(C)$ be a locally small category. A functor $F : cal(C)^"op" -> Set$ is called representable if there exist some object $X$ in $cal(C)$ and a natural isomorphism
+Let $cal(C)$ be a locally small category. A functor $F : cal(C)^"op" -> Set$ is called representable if there exist an object $X$ in $cal(C)$ and a natural isomorphism
 
 $ theta : hom_cal(C)(-, X) tilde.equiv F $
 
-in this case, $X$ called the representing object of $F$. By Yoneda lemma, we have an element $e in F(X)$ unique determine $theta$, is called the universal element of $F$. we also have a version for covariant $G : cal(C) -> Set$ set functor.
+In this case, $X$ is called the representing object of $F$. By the Yoneda lemma, $theta$ is uniquely determined by an element $e in F(X)$, called the universal element of $F$. There is also a version for covariant set-valued functors $G : cal(C) -> Set$.

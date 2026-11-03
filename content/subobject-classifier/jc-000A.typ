@@ -8,7 +8,7 @@
   author: "Justin",
 ))
 
-+ u ≤ v iff u factor through v.
-+ the relation ≤ on the monomorphism into A form a preorder.
-+ the relation \~ is a equivalent relation on monomorphism into A.
-+ x ∈ u and u ≤ v is well defined with respect to the equivalent relation \~, that is, if u \~ u' then x ∈ u iff x ∈ u'; if u \~ u', v \~ v' then u ≤ v iff u' ≤ v'.
++ $u <= v$ iff $u$ factors through $v$.
++ The relation $<=$ on #tree-link("jc-000X")[monomorphisms] into $A$ is a preorder.
++ The relation $tilde.op$ is an equivalence relation on #tree-link("jc-000X")[monomorphisms] into $A$.
++ $x in u$ and $u <= v$ are well defined with respect to the equivalence relation $tilde.op$; that is, if $u tilde.op u'$ then $x in u$ iff $x in u'$, and if $u tilde.op u'$ and $v tilde.op v'$ then $u <= v$ iff $u' <= v'$.

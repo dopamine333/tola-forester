@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-Let C be a category, f, g : X → Y be two morphism in C. show that f = g if and only if fx = gx for all generalize element x of X (where fx denote the composition f ∘ x)
+Let $cal(C)$ be a category and $f, g : X -> Y$ two morphisms in $cal(C)$. Show that $f = g$ if and only if $f x = g x$ for every generalized element $x$ of $X$ (where $f x$ denotes the composite $f compose x$).

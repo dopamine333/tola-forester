@@ -2,11 +2,11 @@
 #import "/templates/tree.typ": transclude, tree-link
 
 #tola-meta((
-  title: "intro",
+  title: "Intro",
   date: "2026-11-03",
   author: "Justin",
 ))
 
-subobject classifier seem to be very important to definite the topos, although i also don't know what topos is. in the processes of understanding the definition of subobject classifier, i think i gain more experience in playing around representable functor, yoneda lemma, natural transformation.
+The subobject classifier seems to be very important for defining a topos, although I don't know what a topos is. In the process of understanding the definition of the subobject classifier, I think I gained more experience in playing around with representable functors, the Yoneda lemma, and natural transformations.
 
-this blog will introduce some concept related to the subobject in general category, and see how subobject classifier *_internalize_* these ideas. a lot of category definition relate to representable functor seem to trying internalize some external structure of category, we will see more precise example of it.
+This post will introduce some concepts related to subobjects in a general category, and show how the subobject classifier *_internalizes_* these ideas. Many categorical definitions involving representable functors seem to be trying to internalize some external structure of the category; we will see more precise examples of this.

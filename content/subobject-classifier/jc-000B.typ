@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-the subobjects on A is the equivalent class of monomorphisms into A quotient by u \~ v, in notation: $Sub(A) := {u bar.v u : U arrow.r.hook A " monic into " A} \/ tilde.op$. if in a category, the collection Sub(A) are indeed a set for all object A, this category is call well-powered.
+The subobjects of $A$ are the equivalence classes of #tree-link("jc-000X")[monomorphisms] into $A$ under $tilde.op$; in notation, $Sub(A) := {u bar.v u : U arrow.r.hook A " monic"} \/ tilde.op$. If the collection $Sub(A)$ is a set for every object $A$, the category is called well-powered.

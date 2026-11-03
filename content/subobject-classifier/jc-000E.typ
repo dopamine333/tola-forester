@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-Fix an object A, the diagonal embedding $Delta_A : A arrow.r.hook A times A, Delta_A := chevron.l id_A, id_A chevron.r$ is monic. it is a important step of internalize the equality of morphism, in the sense that, for all generalize element x, y of A with the same context, we have $x = y$ if and only if $chevron.l x, y chevron.r in Delta_A$.
+Fix an object $A$. The diagonal embedding $Delta_A : A arrow.r.hook A times A$, $Delta_A := chevron.l id_A, id_A chevron.r$, is #tree-link("jc-000X")[monic]. It is an important step toward internalizing the equality of morphisms, in the sense that for all generalized elements $x, y$ of $A$ with the same context, we have $x = y$ if and only if $chevron.l x, y chevron.r in Delta_A$.

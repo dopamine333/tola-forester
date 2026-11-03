@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-for a monomorphism $u : U arrow.r.hook A$ and a generalized element $x : Gamma -> A$ of A, we write $x in u$ if x factor through u, i.e., there exist a morphism $phi : Gamma -> U$ such that x = u φ.
+For a #tree-link("jc-000X")[monomorphism] $u : U arrow.r.hook A$ and a generalized element $x : Gamma -> A$ of $A$, we write $x in u$ if $x$ factors through $u$, i.e., there exists a morphism $phi : Gamma -> U$ such that $x = u phi$.

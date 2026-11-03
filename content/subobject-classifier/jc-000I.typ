@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-If pullback exist. let u be a subobject of A, show that x ∈ u iff $x^(-1)(u) tilde.op id_Gamma$ for all generalized element $x : Gamma -> A$ of A. it say all proposition like x ∈ u, can be write as some equality of subobject. using the exercise above, x = y iff ⟨x, y⟩ ∈ Δ, we the primary predicte of the language becomes the equality of subobject!
+Assume pullbacks exist, and let $u$ be a subobject of $A$. Show that $x in u$ iff $x^(-1)(u) tilde.op id_Gamma$ for every generalized element $x : Gamma -> A$ of $A$. This says that every proposition like $x in u$ can be written as an equality of subobjects. Using the diagonal embedding above ($x = y$ iff $chevron.l x, y chevron.r in Delta_A$), the primitive predicates of the language become equalities of subobjects!

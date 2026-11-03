@@ -3,19 +3,19 @@
 #import "/lib/macros.typ": *
 
 #tola-meta((
-  title: "subobject functor and some example",
+  title: "The subobject functor and some examples",
   date: "2026-11-03",
   author: "Justin",
 ))
 
-we will look some important examples of subobjects:
+We will look at some important examples of subobjects:
 
 #transclude("jc-000D")
 #transclude("jc-000E")
 #transclude("jc-000F")
 #transclude("jc-000G")
 
-We summary this example by the following proposition:
+We summarize this example with the following proposition:
 
 #transclude("jc-000H")
 #transclude("jc-000I")

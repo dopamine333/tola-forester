@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-Notice that for a morphism pointing out from terminal object is a monomorphism, so $chi_(id_1) : 1 arrow.r.hook Omega in Sub(Omega)$. Show that $x in u <=> chi_u x in chi_(id_1)$ for any subobject $u in Sub(A)$ and generalized element $x$ of $A$.
+Notice that any morphism out of the terminal object is a #tree-link("jc-000X")[monomorphism], so $chi_(id_1) : 1 arrow.r.hook Omega in Sub(Omega)$. Show that $x in u <=> chi_u x in chi_(id_1)$ for every subobject $u in Sub(A)$ and generalized element $x$ of $A$.

@@ -1,5 +1,5 @@
 #import "@tola/source:0.0.0": tola-meta
-#import "/templates/tree.typ": transclude, tree-link
+#import "/templates/tree.typ": transclude
 
 #tola-meta((
   title: "Subobject Classifier",

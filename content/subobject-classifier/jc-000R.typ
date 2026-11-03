@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-Show that $x in u <=> chi_u x in t$ for any subobject $u in Sub(A)$ and generalized element $x$ of $A$. it gives the justification of the name of $chi_u$ is call indicator function and $t$ is the first alphabet of "true".
+Show that $x in u <=> chi_u x in t$ for every subobject $u in Sub(A)$ and generalized element $x$ of $A$. This justifies calling $chi_u$ an indicator function, and naming $t$ after the first letter of "true".

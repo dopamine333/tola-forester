@@ -8,14 +8,14 @@
   author: "Justin",
 ))
 
-Recall that we have the intersection $u inter v in Sub(A)$ for any subobjects $u, v in Sub(A)$, satisfying $x in u inter v <=> x in u and x in v$. show that
+Recall that we have the intersection $u inter v in Sub(A)$ of any subobjects $u, v in Sub(A)$, satisfying $x in u inter v <=> x in u and x in v$. Show that
 
 $ Sub times Sub & -> Sub \
   Sub(A) times Sub(A) & -> Sub(A) \
   (u, v) & |-> u inter v $
 
-is a natural transformation. use $Sub tilde.equiv hom_cal(C)(-, Omega)$ and Yoneda lemma, show it induce a morphism $"and" : Omega times Omega -> Omega$ satisfy:
+is a natural transformation. Using $Sub tilde.equiv hom_cal(C)(-, Omega)$ and the Yoneda lemma, show that it induces a morphism $"and" : Omega times Omega -> Omega$ satisfying
 
 $ "and" chevron.l p, q chevron.r = "true"_Gamma <=> (p = "true"_Gamma and q = "true"_Gamma) $
 
-for all morphism $p, q : Gamma -> Omega$. we should call a morphism $p : Gamma -> Omega$ a internal predicate on $Gamma$. we can understand $"and" : Omega times Omega -> Omega$ as the internal connectives "and".
+for all morphisms $p, q : Gamma -> Omega$. We call a morphism $p : Gamma -> Omega$ an internal predicate on $Gamma$, and we can understand $"and" : Omega times Omega -> Omega$ as the internal connective "and".

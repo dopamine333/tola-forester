@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-Fix an object A, $id_A : A arrow.r.hook A$ is monic. it represents the maximum subobject of A i.e. for any subobject u of A, we have u ≤ id\_A. Or it "collected" all element of A i.e., for any generalized element $x$ of $A$, we have $x in id_A$.
+Fix an object $A$. The identity $id_A : A arrow.r.hook A$ is #tree-link("jc-000X")[monic]. It represents the maximum subobject of $A$, i.e. for every subobject $u$ of $A$, we have $u <= id_A$. In other words, it "collects" all elements of $A$: for every generalized element $x$ of $A$, we have $x in id_A$.

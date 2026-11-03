@@ -3,7 +3,7 @@
 #import "/lib/macros.typ": *
 
 #tola-meta((
-  title: "define subobject classifier",
+  title: "Defining the subobject classifier",
   date: "2026-11-03",
   author: "Justin",
 ))
@@ -18,26 +18,26 @@ $)
   T edge(t, "hook->", label-side: #right) & Omega
 $)
 
-- representable functor: internalisation
-- indicator function, unpack naturality
-- Yoneda lemma: find the essential one construction
-- compute the inclusion map of the universal subobject $T arrow.r.hook Omega$
+- Representable functors: internalization.
+- Indicator functions; unpacking naturality.
+- The Yoneda lemma: find the one essential construction.
+- Compute the inclusion map of the universal subobject $T arrow.r.hook Omega$.
 
-now we have enough courage to see the definition of subobject classifier. from now on, we will assume our category $cal(C)$ has pullback, terminal object, is locally small and well-powered.
+Now we have enough courage to look at the definition of the subobject classifier. From now on, we assume that our category $cal(C)$ has pullbacks and a terminal object, and is locally small and well-powered.
 
 #transclude("jc-000Q")
 
-from above discussion, we have expected the naturality of $chi$ gives we a uniform way to convert a subobject of A to a morphism into Ω. we may also use yoneda lemma to find the essential core of $chi$. more over, the isomorphism part of $chi$ say all subobject are totally characterised by the arrow into $Omega$. we encourage the reader to play around the naturality of $chi$ and see how the example in above paragraph corresponded to, you may guess all the construction we will do in the below section.
+From the discussion above, we expect the naturality of $chi$ to give us a uniform way to convert a subobject of $A$ into a morphism into $Omega$. We may also use the Yoneda lemma to find the essential core of $chi$. Moreover, the isomorphism part of $chi$ says that every subobject is completely characterized by an arrow into $Omega$. We encourage the reader to play around with the naturality of $chi$ and see what the examples in the previous sections correspond to; you may be able to guess all the constructions we will do in the sections below.
 
-Let's unpack the definition of subobject classifier
+Let's unpack the definition of the subobject classifier:
 
 $ chi : & quad Sub tilde.equiv hom_cal(C)(-, Omega) \
   chi_A : & Sub(A) tilde.equiv hom_cal(C)(A, Omega) \
   chi_A : & quad quad u |-> chi_A (u) #sym.eq.colon chi_u $
 
-first, $chi$ is a natural transformation it has components $chi_A : Sub(A) -> hom_cal(C)(A, Omega)$ for each object A. let's denote the image of a subobject $u in Sub(A)$ under $chi_A$ as $chi_u := chi_A (u)$, notice we can infer the object $A$ by the target of the monomorphism $u : U arrow.r.hook A$, so the notation $chi_u$ do not mention about $A$ is appropriate. we call $chi_u$ the indicator (or characteristic) function of $u$.
+First, $chi$ is a natural transformation; it has a component $chi_A : Sub(A) -> hom_cal(C)(A, Omega)$ for each object $A$. Let's denote the image of a subobject $u in Sub(A)$ under $chi_A$ by $chi_u := chi_A (u)$. Notice that we can infer the object $A$ from the target of the #tree-link("jc-000X")[monomorphism] $u : U arrow.r.hook A$, so it is appropriate that the notation $chi_u$ does not mention $A$. We call $chi_u$ the indicator (or characteristic) function of $u$.
 
-the naturality of $chi$ gives (can you guess what it is by just recall the functorial of $Sub$ and $hom_cal(C)(-, Omega)$ without drawing the natural square?), for any morphism $f : A -> B$, we have
+The naturality of $chi$ gives (can you guess what it is just by recalling the functoriality of $Sub$ and $hom_cal(C)(-, Omega)$, without drawing the naturality square?), for any morphism $f : A -> B$, that
 
 #cd(
   node((0, 0), $B$),
@@ -61,34 +61,34 @@ the naturality of $chi$ gives (can you guess what it is by just recall the funct
   edge((3, 1), (4, 1), "|->"),
 )
 
-commutes, that is, $chi_(f^(-1)(u)) = chi_u f$ for any subobject $u in Sub(B)$. (compare it to set-theoretic indicator function of a subset!)
+commutes, that is, $chi_(f^(-1)(u)) = chi_u f$ for every subobject $u in Sub(B)$. (Compare this with the set-theoretic indicator function of a subset!)
 
-Since $chi$ is isomorphism, all morphism into $Omega$ should be the indicator function for some subobject, in fact, we can compute this subobject explicitly: Yoneda lemma tell us, we should consider the universal subobject $t : T arrow.r.hook Omega in Sub(Omega)$ defined by
+Since $chi$ is an isomorphism, every morphism into $Omega$ should be the indicator function of some subobject. In fact, we can compute this subobject explicitly. The Yoneda lemma tells us to consider the universal subobject $t : T arrow.r.hook Omega in Sub(Omega)$, defined by
 
 $ chi_Omega & : Sub(Omega) tilde.equiv hom_cal(C)(Omega, Omega) \
   chi_Omega & : t |-> id_Omega $
 
-For any morphism $f : A -> Omega$, apply naturality to $f : A -> Omega$ and $t in Sub(Omega)$ then
+For any morphism $f : A -> Omega$, applying naturality to $f : A -> Omega$ and $t in Sub(Omega)$ gives
 
 $ chi_(f^(-1)(t)) & = chi_t f \
   & = id_Omega f \
   & = f $
 
-that is, $hom_cal(C)(A, Omega) -> Sub(A), f |-> f^(-1)(t)$ give us the inverse of $chi$. all subobjects just a preimage of the universal subobject $t$!
+That is, $hom_cal(C)(A, Omega) -> Sub(A), f |-> f^(-1)(t)$ is the inverse of $chi$: every subobject is just a preimage of the universal subobject $t$!
 
 #transclude("jc-000R")
 
-Finally, we can also compute the monomorphism $t : T arrow.r.hook Omega$ as an indicator function of some subobject. for the sake of showing the proof technical of category theory, we compute $t^(-1)(t)$ in three ways:
+Finally, we can also compute the #tree-link("jc-000X")[monomorphism] $t : T arrow.r.hook Omega$ as the indicator function of some subobject. To show off the proof techniques of category theory, we compute $t^(-1)(t)$ in three ways:
 
-- compute $t^(-1)(t)$ by pullback: consider a cone $T attach(<-, t: x) Gamma attach(->, t: y) T$ of the diagram $T attach(arrow.r.hook, t: t) Omega attach(arrow.l.hook, t: t) T$:
+- Computing $t^(-1)(t)$ by pullback: consider a cone $T attach(<-, t: x) Gamma attach(->, t: y) T$ over the diagram $T attach(arrow.r.hook, t: t) Omega attach(arrow.l.hook, t: t) T$:
 
   #square
 
-  we have two data $x, y$ and one constraint, $t x = t y$. since $t$ is monic, $x = y$. so a cone of $T attach(arrow.r.hook, t: t) Omega attach(arrow.l.hook, t: t) T$ really has one data $x : Gamma -> T$ without any constraint; it holds the same data as a cone of the diagram consisting of a single object $T$. but the limit of the diagram that consists of a single object $T$ is $T$ with the universal cone $id_T : T -> T$. so we claim: the following is a pullback diagram
+  We have two pieces of data, $x$ and $y$, and one constraint, $t x = t y$. Since $t$ is #tree-link("jc-000X")[monic], $x = y$. So a cone over $T attach(arrow.r.hook, t: t) Omega attach(arrow.l.hook, t: t) T$ really consists of one piece of data, $x : Gamma -> T$, without any constraint; it holds the same data as a cone over the diagram consisting of the single object $T$. But the limit of the diagram consisting of the single object $T$ is $T$ with the universal cone $id_T : T -> T$. So we claim that the following is a pullback square:
 
   #pullback
 
-  indeed, it commutes $t id_T = t id_T$. given any cone $T attach(<-, t: x) Gamma attach(->, t: y) T$ with $t x = t y$:
+  Indeed, it commutes: $t id_T = t id_T$. Given any cone $T attach(<-, t: x) Gamma attach(->, t: y) T$ with $t x = t y$:
 
   #cd(
     node((0, 0), $Gamma$),
@@ -105,20 +105,20 @@ Finally, we can also compute the monomorphism $t : T arrow.r.hook Omega$ as an i
     edge((1, 2), (2, 2), $t$, "hook->", label-side: right),
   )
 
-  since $t x = t y$ and $t$ is monic, $x = y$.
-- existence of $phi$: take $phi := x : Gamma -> T$ and we have $x = id_T x$ and $y = x = id_T x$.
-- uniqueness of $phi$: if $psi : Gamma -> T$ such that $x = id_T psi$ and $y = id_T psi$ than $x = id_T psi = psi$. \
-  (in general, a pullback of monomorphism of itself is the identity map.)
+  since $t x = t y$ and $t$ is #tree-link("jc-000X")[monic], $x = y$.
+- Existence of $phi$: take $phi := x : Gamma -> T$; then $x = id_T x$ and $y = x = id_T x$.
+- Uniqueness of $phi$: if $psi : Gamma -> T$ satisfies $x = id_T psi$ and $y = id_T psi$, then $x = id_T psi = psi$. \
+  (In general, the pullback of a #tree-link("jc-000X")[monomorphism] along itself is the identity map.)
 
 Therefore, $t^(-1)(t) tilde.op id_T in Sub(T)$ and $t = chi_(id_T)$.
 
-- compute $t^(-1)(t)$ by Yoneda lemma: in general, the existence of pullback of the diagram $A attach(->, t: f) C attach(<-, t: g) B$ is exactly to say we have an object $A times_C B$ and a isomorphism
+- Computing $t^(-1)(t)$ by the Yoneda lemma: in general, the existence of a pullback of the diagram $A attach(->, t: f) C attach(<-, t: g) B$ says exactly that we have an object $A times_C B$ and an isomorphism
 
   $ hom_cal(C)(Gamma, A times_C B) tilde.equiv {(x, y) in hom_cal(C)(Gamma, A) times hom_cal(C)(Gamma, B) bar.v f x = g y} $
 
-  natural in $Gamma$. don't be scary about this statement. think about the functorial of functors at both side (verify the right hand side is a functor in $Gamma$! it send a object $Gamma$ to the collection of cones of the diagram $A attach(->, t: f) C attach(<-, t: g) B$ out from $Gamma$, and functorial is act by precomposition). follow the process above to unpack the naturality and find the universal element, you will see it is exact the universal property of pullback.)
+  natural in $Gamma$. Don't be scared by this statement. Think about the functoriality of the functors on both sides (verify that the right-hand side is a functor in $Gamma$! It sends an object $Gamma$ to the collection of cones over the diagram $A attach(->, t: f) C attach(<-, t: g) B$ with apex $Gamma$, and it acts on morphisms by precomposition). Follow the process above to unpack the naturality and find the universal element; you will see that it is exactly the universal property of the pullback.
 
-To compute the pullback $T times_Omega T$ of the diagram $T attach(arrow.r.hook, t: t) Omega attach(arrow.l.hook, t: t) T$. the machinery of Yoneda lemma and representable functor, enable us to do the following computation:
+To compute the pullback $T times_Omega T$ of the diagram $T attach(arrow.r.hook, t: t) Omega attach(arrow.l.hook, t: t) T$, the machinery of the Yoneda lemma and representable functors lets us do the following computation:
 
 $ & hom_cal(C)(Gamma, T times_Omega T) \
   tilde.equiv & {(x, y) in hom_cal(C)(Gamma, T) times hom_cal(C)(Gamma, T) bar.v t x = t y} \
@@ -126,23 +126,23 @@ $ & hom_cal(C)(Gamma, T times_Omega T) \
   tilde.equiv & {x in hom_cal(C)(Gamma, T) bar.v "True"} \
   = & hom_cal(C)(Gamma, T) $
 
-is an isomorphism natural in $Gamma$ (why?). So by Yoneda lemma, $T times_Omega T tilde.equiv T$ and the univeral cone is given by the element corresponding to the $id_T in hom_cal(C)(T, T)$ (why?):
+This is an isomorphism natural in $Gamma$ (why?). So by the Yoneda lemma, $T times_Omega T tilde.equiv T$, and the universal cone is given by the element corresponding to $id_T in hom_cal(C)(T, T)$ (why?):
 
 $ & {(x, y) in hom_cal(C)(T, T) times hom_cal(C)(T, T) bar.v t x = t y} & in.rev (id_T, id_T) \
   tilde.equiv & {(x, y) in hom_cal(C)(T, T) times hom_cal(C)(T, T) bar.v x = y} & in.rev (id_T, id_T) \
   tilde.equiv & {x in hom_cal(C)(T, T) bar.v "True"} & in.rev id_T \
   = & hom_cal(C)(T, T) & in.rev id_T $
 
-so the following is a pullback square
+so the following is a pullback square:
 
 #pullback
 
 Therefore, $t^(-1)(t) tilde.op id_T in Sub(T)$ and $t = chi_(id_T)$.
 
-- compute $t^(-1)(t)$ by generalized element: by definition of preimage, for all generalized element $x$ of $T$, we have
+- Computing $t^(-1)(t)$ with generalized elements: by the definition of preimage, for every generalized element $x$ of $T$, we have
 
   $ x in t^(-1)(t) <=> t x in t $
 
-  but $t x = t x$ so $t x in t$ for any $x$. so $t^(-1)(t)$ is the greatest subobject in $Sub(t)$. Therefore, $t^(-1)(t) tilde.op id_T in Sub(T)$ and $t = chi_(id_T)$.
+  But $t x = t x$, so $t x in t$ for every $x$. So $t^(-1)(t)$ is the greatest subobject in $Sub(T)$. Therefore, $t^(-1)(t) tilde.op id_T in Sub(T)$ and $t = chi_(id_T)$.
 
-the comparison of this three proof is very interesting. i personal like the second method the most, Yoneda lemma gives we a strong, flexible and intuitive way to think about an object defined as some representing object of a functor. it includes example like limit, exponential object, subobject classifier and more. but in principle, it may be wordy: one need to justify every step in the computation is natural and isomorphism, and write down how elements were send and check properties.
+Comparing these three proofs is very interesting. Personally, I like the second method the most: the Yoneda lemma gives us a strong, flexible and intuitive way to think about an object defined as the representing object of some functor. This covers examples like limits, exponential objects, the subobject classifier, and more. But in principle it can be wordy: one needs to justify that every step in the computation is natural and an isomorphism, write down how elements are sent, and check the properties.

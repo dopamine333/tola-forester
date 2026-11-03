@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-Conversely, without assume the category has pullback, if $v : V arrow.r.hook A$ is the preimage of u under f, then v = v id\_V so v ∈ v, since v is the preimage, f v ∈ u. we get f v = u g for some g : V → U. show that (V, v, g) is the pullback of the diagram $A attach(->, t: f) B attach(arrow.l.hook, t: u) U$.
+Conversely, without assuming that the category has pullbacks: if $v : V arrow.r.hook A$ is the preimage of $u$ under $f$, then $v = v id_V$, so $v in v$; since $v$ is the preimage, $f v in u$, and we get $f v = u g$ for some $g : V -> U$. Show that $(V, v, g)$ is the pullback of the diagram $A attach(->, t: f) B attach(arrow.l.hook, t: u) U$.

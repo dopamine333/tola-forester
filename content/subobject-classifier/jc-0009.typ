@@ -8,4 +8,4 @@
   author: "Justin",
 ))
 
-for monomorphism $u : U arrow.r.hook A, v : V arrow.r.hook A$, we write $u <= v$ if for all generalized element x of A, $x in u$ implies $x in v$. we write u \~ v if u ≤ v and v ≤ u.
+For #tree-link("jc-000X")[monomorphisms] $u : U arrow.r.hook A$ and $v : V arrow.r.hook A$, we write $u <= v$ if for every generalized element $x$ of $A$, $x in u$ implies $x in v$. We write $u tilde.op v$ if $u <= v$ and $v <= u$.

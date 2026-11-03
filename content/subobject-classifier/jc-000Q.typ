@@ -8,6 +8,6 @@
   author: "Justin",
 ))
 
-The subobject classifier $Omega$ is the representing object of subobject functor $Sub$. Explicitly, $Omega$ is a object in $cal(C)$ and we have a natural isomorphism:
+The subobject classifier $Omega$ is the representing object of the subobject functor $Sub$. Explicitly, $Omega$ is an object of $cal(C)$ together with a natural isomorphism
 
 $ chi : Sub tilde.equiv hom_cal(C)(-, Omega) $
