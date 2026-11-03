@@ -5,3 +5,5 @@
 #tola-meta((title: "Forest"))
 
 The root of the forest. Create a tree with `nu scripts/new-tree.nu "Title"`, then link it here with `#tree-link("…")` or embed it with `#transclude("…")`.
+
+- #tree-link("jc-0001")

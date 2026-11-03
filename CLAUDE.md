@@ -28,6 +28,9 @@ templates/render.typ   The page: « Home link, the tree, back matter, table of c
 assets/styles/style.css   Forester's stylesheet, adapted to Typst's markup.
 assets/scripts/forest.js  Folding, TOC jumps, link previews, Ctrl-K search.
 assets/fonts/          Inria Sans (OFL) and Latin Modern Math (GUST), self-hosted like forester-notes.org.
+lib/macros.typ         Notation shared by trees (id, Sub, hom, the underlined constant functor `pt`)
+                       and `cd(...)`, a fletcher commutative diagram as inline SVG. Outside content/,
+                       so it is not a tree — like Forester's macros.
 ```
 
 ### Trees and addresses
