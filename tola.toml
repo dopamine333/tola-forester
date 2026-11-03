@@ -1,0 +1,44 @@
+# Tola configuration (v0.8.1)
+# https://github.com/tola-rs/tola-ssg
+# `tola help "[site]"` (or any other table name) documents every field.
+
+# Read in Typst via `#import "@tola/site:0.0.0": site` (site.title, site.authors, ...).
+[site]
+# origin = ""  # Public address without a path, e.g. "https://example.com"; feeds/sitemap need it
+base-path = "/"
+title = "Forest"
+authors = []
+description = ""
+language = "en"
+
+[build]
+entry = "site.typ"       # Root program: lists the pages and renders each one
+content-dir = "content"
+publish-dir = "public"
+
+# Broken internal links/resources/#fragments fail the build ("error" is the default).
+[build.references]
+navigation = "error"
+resources = "error"
+fragments = "error"
+
+# Each tree publishes a source directory below a URL prefix; link files with
+# `asset-url("/styles/style.css")` so they pick up the cache-busting `?h=…`.
+# style.css loads the fonts by relative URL (`../fonts/…`).
+[assets]
+cache-busting = true
+trees = [
+  { source = "assets/styles", url-prefix = "/styles" },
+  { source = "assets/scripts", url-prefix = "/scripts" },
+  { source = "assets/fonts", url-prefix = "/fonts" },
+  { source = "assets/images", url-prefix = "/images" },
+]
+files = []
+
+# `tola dev` / `tola preview` listener
+[server]
+interface = "127.0.0.1"
+port = 5277
+
+[dev]
+watch = true
