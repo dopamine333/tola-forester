@@ -4,8 +4,8 @@
 
 # Read in Typst via `#import "@tola/site:0.0.0": site` (site.title, site.authors, ...).
 [site]
-# origin = ""  # Public address without a path, e.g. "https://example.com"; feeds/sitemap need it
-base-path = "/"
+origin = "https://dopamine333.github.io/"  # Public address without a path, e.g. "https://example.com"; feeds/sitemap need it
+base-path = "/tola-forester/"
 title = "Forest"
 authors = []
 description = ""
