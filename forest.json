@@ -1,0 +1,206 @@
+[
+  {
+    "addr": "index",
+    "title": "Forest",
+    "taxon": null,
+    "url": "/tola-forester/"
+  },
+  {
+    "addr": "jc-000X",
+    "title": "monomorphism",
+    "taxon": "Definition",
+    "url": "/tola-forester/jc-000X/"
+  },
+  {
+    "addr": "jc-0001",
+    "title": "Subobject Classifier",
+    "taxon": null,
+    "url": "/tola-forester/jc-0001/"
+  },
+  {
+    "addr": "jc-0002",
+    "title": "Outline",
+    "taxon": null,
+    "url": "/tola-forester/jc-0002/"
+  },
+  {
+    "addr": "jc-0003",
+    "title": "Intro",
+    "taxon": null,
+    "url": "/tola-forester/jc-0003/"
+  },
+  {
+    "addr": "jc-0004",
+    "title": "Generalized elements",
+    "taxon": null,
+    "url": "/tola-forester/jc-0004/"
+  },
+  {
+    "addr": "jc-0005",
+    "title": "generalized element",
+    "taxon": "Definition",
+    "url": "/tola-forester/jc-0005/"
+  },
+  {
+    "addr": "jc-0006",
+    "title": "jc-0006",
+    "taxon": "Exercise",
+    "url": "/tola-forester/jc-0006/"
+  },
+  {
+    "addr": "jc-0007",
+    "title": "Subobjects",
+    "taxon": null,
+    "url": "/tola-forester/jc-0007/"
+  },
+  {
+    "addr": "jc-0008",
+    "title": "jc-0008",
+    "taxon": "Definition",
+    "url": "/tola-forester/jc-0008/"
+  },
+  {
+    "addr": "jc-0009",
+    "title": "jc-0009",
+    "taxon": "Definition",
+    "url": "/tola-forester/jc-0009/"
+  },
+  {
+    "addr": "jc-000A",
+    "title": "jc-000A",
+    "taxon": "Exercise",
+    "url": "/tola-forester/jc-000A/"
+  },
+  {
+    "addr": "jc-000B",
+    "title": "jc-000B",
+    "taxon": "Definition",
+    "url": "/tola-forester/jc-000B/"
+  },
+  {
+    "addr": "jc-000C",
+    "title": "The subobject functor and some examples",
+    "taxon": null,
+    "url": "/tola-forester/jc-000C/"
+  },
+  {
+    "addr": "jc-000D",
+    "title": "jc-000D",
+    "taxon": "Example",
+    "url": "/tola-forester/jc-000D/"
+  },
+  {
+    "addr": "jc-000E",
+    "title": "jc-000E",
+    "taxon": "Example",
+    "url": "/tola-forester/jc-000E/"
+  },
+  {
+    "addr": "jc-000F",
+    "title": "jc-000F",
+    "taxon": "Example",
+    "url": "/tola-forester/jc-000F/"
+  },
+  {
+    "addr": "jc-000G",
+    "title": "jc-000G",
+    "taxon": "Exercise",
+    "url": "/tola-forester/jc-000G/"
+  },
+  {
+    "addr": "jc-000H",
+    "title": "Subobject functor",
+    "taxon": "Proposition",
+    "url": "/tola-forester/jc-000H/"
+  },
+  {
+    "addr": "jc-000I",
+    "title": "jc-000I",
+    "taxon": "Key Exercise",
+    "url": "/tola-forester/jc-000I/"
+  },
+  {
+    "addr": "jc-000J",
+    "title": "jc-000J",
+    "taxon": "Example",
+    "url": "/tola-forester/jc-000J/"
+  },
+  {
+    "addr": "jc-000K",
+    "title": "The greatest subobject as a natural transformation {∗} → Sub",
+    "taxon": null,
+    "url": "/tola-forester/jc-000K/"
+  },
+  {
+    "addr": "jc-000L",
+    "title": "Yoneda lemma",
+    "taxon": "Theorem",
+    "url": "/tola-forester/jc-000L/"
+  },
+  {
+    "addr": "jc-000M",
+    "title": "Representable functor",
+    "taxon": "Definition",
+    "url": "/tola-forester/jc-000M/"
+  },
+  {
+    "addr": "jc-000N",
+    "title": "Yoneda embedding",
+    "taxon": "Corollary",
+    "url": "/tola-forester/jc-000N/"
+  },
+  {
+    "addr": "jc-000O",
+    "title": "jc-000O",
+    "taxon": "Exercise",
+    "url": "/tola-forester/jc-000O/"
+  },
+  {
+    "addr": "jc-000P",
+    "title": "Defining the subobject classifier",
+    "taxon": null,
+    "url": "/tola-forester/jc-000P/"
+  },
+  {
+    "addr": "jc-000Q",
+    "title": "jc-000Q",
+    "taxon": "Definition",
+    "url": "/tola-forester/jc-000Q/"
+  },
+  {
+    "addr": "jc-000R",
+    "title": "jc-000R",
+    "taxon": "Key Exercise",
+    "url": "/tola-forester/jc-000R/"
+  },
+  {
+    "addr": "jc-000S",
+    "title": "Translating the greatest subobject",
+    "taxon": null,
+    "url": "/tola-forester/jc-000S/"
+  },
+  {
+    "addr": "jc-000T",
+    "title": "jc-000T",
+    "taxon": "Key Exercise",
+    "url": "/tola-forester/jc-000T/"
+  },
+  {
+    "addr": "jc-000U",
+    "title": "Outro",
+    "taxon": null,
+    "url": "/tola-forester/jc-000U/"
+  },
+  {
+    "addr": "jc-000V",
+    "title": "jc-000V",
+    "taxon": "Exercise",
+    "url": "/tola-forester/jc-000V/"
+  },
+  {
+    "addr": "jc-000W",
+    "title": "jc-000W",
+    "taxon": "Exercise",
+    "url": "/tola-forester/jc-000W/"
+  }
+]
