@@ -62,8 +62,10 @@
 } else if taxon != none { cap(taxon) + ". " }]
 
 /// The `[addr]` link after a title.
-#let slug(t) = html.span(class: "slug", link(t.permalink)[\[#t.addr\]])
-
+#let slug(t) = html.span(
+  class: "slug",
+  link(route-url(t.permalink))[\[#t.addr\]]
+)
 /// A tree's `<h1>`: taxon, title (an untitled tree shows only its address),
 /// then the address. Code block, not markup: no stray whitespace.
 #let tree-h1(t, taxon, address) = html.h1({
@@ -79,7 +81,10 @@
 /// shows its title, `#tree-link("jc-0002")[this note]` your own text.
 #let tree-link(addr, ..text) = {
   let t = tree-entry(addr)
-  link(route-of(addr), text.pos().at(0, default: if t == none { addr } else { title-of(t) }))
+  link(
+    route-url(route-of(addr)),
+    text.pos().at(0, default: if t == none { addr } else { title-of(t) })
+  )
 }
 
 /// Embed tree `addr` here, like Forester's `\transclude{addr}`: a section with
